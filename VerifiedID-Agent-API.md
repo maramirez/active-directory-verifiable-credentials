@@ -118,7 +118,7 @@ Content-Type: application/json
 ```json
 {
   "sessionId": "a3f1b2c4-...",
-  "verifyUrl": "openid-vc://...",
+  "verifyUrl": "https://id.labs.barry.edu/verify/a3f1b2c4-...",
   "expiresAt": "2026-07-13T18:05:00Z"
 }
 ```
@@ -126,7 +126,7 @@ Content-Type: application/json
 | Field       | Description                                         |
 |-------------|-----------------------------------------------------|
 | `sessionId` | Store this — pass it to endpoint 3 to poll for the result |
-| `verifyUrl` | Send this to the user. Opens Microsoft Authenticator on mobile; shows a QR code on desktop. |
+| `verifyUrl` | An `https://` link — send this directly to the user in chat, email, or Teams. On mobile it opens Microsoft Authenticator automatically. On desktop it shows a QR code to scan. |
 | `expiresAt` | Session is valid for ~5 minutes from creation       |
 
 ---
