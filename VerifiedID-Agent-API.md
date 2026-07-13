@@ -118,7 +118,7 @@ Content-Type: application/json
 ```json
 {
   "sessionId": "a3f1b2c4-...",
-  "verifyUrl": "https://id.labs.barry.edu/verify/a3f1b2c4-...",
+  "verifyUrl": "https://id.labs.barry.edu/verify?id=a3f1b2c4-...",
   "expiresAt": "2026-07-13T18:05:00Z"
 }
 ```
